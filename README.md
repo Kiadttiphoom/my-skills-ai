@@ -6,17 +6,36 @@ Professional Enterprise Repository for AI Coding Assistant configurations, share
 
 ## 🏷️ Tags Index (ค้นตามหมวดแท็ก)
 
-กดที่ Tag เพื่อดูสกิลที่เกี่ยวข้องตามสายงาน:
+กดที่ Tag เพื่อกระโดดไปยังกลุ่มสกิลตามสายงาน:
 
-`#DotNet` | `#Database` | `#AI-Agents` | `#Performance` | `#Testing` | `#DevOps` | `#Frontend` | `#Documents`
+[🏷️ `#DotNet`](#tag-dotnet) | [🏷️ `#Database`](#tag-database) | [🏷️ `#AI-Agents`](#tag-ai-agents) | [🏷️ `#Performance`](#tag-performance) | [🏷️ `#Testing`](#tag-testing) | [🏷️ `#DevOps`](#tag-devops) | [🏷️ `#Frontend`](#tag-frontend) | [🏷️ `#Documents`](#tag-documents)
 
+---
+
+### 📌 Tag Details
+
+<a id="tag-dotnet"></a>
 * **`#DotNet`**: `aspnet-core`, `dotnet-webapi`, `analyzing-dotnet-performance`, `microbenchmarking`, `dotnet-aot-compat`, `directory-build-organization`, `convert-to-cpm`
+
+<a id="tag-database"></a>
 * **`#Database`**: `database-design`, `sql-server-design`, `postgresql-design`, `optimizing-ef-core-queries`, `supabase`, `supabase-postgres-best-practices`
+
+<a id="tag-ai-agents"></a>
 * **`#AI-Agents`**: `ai-sdk`, `ai-gateway`, `ai-elements`, `chat-sdk`, `json-render`, `eve`, `v0-dev`
+
+<a id="tag-performance"></a>
 * **`#Performance`**: `analyzing-dotnet-performance`, `build-perf-diagnostics`, `microbenchmarking`, `cdn-caching`, `runtime-cache`
+
+<a id="tag-testing"></a>
 * **`#Testing`**: `code-testing-agent`, `run-tests`, `writing-mstest-tests`, `test-anti-patterns`, `assertion-quality`, `test-gap-analysis`
+
+<a id="tag-devops"></a>
 * **`#DevOps`**: `deployments-cicd`, `env-vars`, `cron-jobs`, `vercel-cli`, `nuget-trusted-publishing`
+
+<a id="tag-frontend"></a>
 * **`#Frontend`**: `nextjs`, `shadcn`, `react-best-practices`, `geist`, `satori`, `swr`
+
+<a id="tag-documents"></a>
 * **`#Documents`**: `documents`, `pdf`, `presentations`, `spreadsheets`, `artifact-template-system-design`
 
 ---
