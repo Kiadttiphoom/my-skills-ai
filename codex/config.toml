@@ -1,0 +1,118 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "low"
+service_tier = "default"
+
+
+
+
+notify = [ "C:\\Users\\BizDev25\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\fb8898c05a62885e\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
+
+[marketplaces.openai-bundled]
+last_updated = "2026-08-06T05:12:46Z"
+source_type = "local"
+source = '\\?\C:\Users\BizDev25\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-08-06T05:13:12Z"
+source_type = "local"
+source = '\\?\C:\Users\BizDev25\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[features]
+js_repl = false
+
+[mcp_servers.node_repl]
+args = []
+command = 'C:\Users\BizDev25\AppData\Local\OpenAI\Codex\runtimes\cua_node\fb8898c05a62885e\bin\node_repl.exe'
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\BizDev25\AppData\Local\OpenAI\Codex\runtimes\cua_node\fb8898c05a62885e\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\BizDev25\AppData\Local\OpenAI\Codex\runtimes\cua_node\fb8898c05a62885e\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\BizDev25\.codex;C:\Users\BizDev25\AppData\Local\OpenAI\Codex\runtimes\cua_node\fb8898c05a62885e\bin\node_modules'
+CODEX_HOME = 'C:\Users\BizDev25\.codex'
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "aa6d8ffe273c2a7b1b20105a35ae49f69bdb4f025640807a31bcb47f8b67b92b"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.730.61639"
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-82984fec-d44a-40cf-a697-097a1f1191aa'
+CODEX_CLI_PATH = 'C:\Users\BizDev25\AppData\Local\OpenAI\Codex\bin\68de26ad08be95cd\codex.exe'
+
+[mcp_servers.motion]
+enabled = true
+url = "https://mcp.motion.so/mcp"
+
+[mcp_servers.higgsfield]
+enabled = false
+url = "https://mcp.higgsfield.ai/mcp"
+
+[desktop]
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = true
+followUpQueueMode = "queue"
+localeOverride = "th-TH"
+appearanceTheme = "dark"
+avatar-overlay-mascot-width-px = 80
+selected-avatar-id = "custom:buddy"
+
+[windows]
+sandbox = "elevated"
+
+[projects.'c:\pond\bizinfo\plannet2026']
+trust_level = "trusted"
+
+[projects.'c:\pond\sealand-smart-wash-attendance-system']
+trust_level = "trusted"
+
+[projects.'c:\users\bizdev25\documents\codex\2026-07-08\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\bizdev25\documents\codex\2026-07-14\plugin-creator-c-users-bizdev25-codex']
+trust_level = "trusted"
+
+[projects.'c:\pond\sealand-stock']
+trust_level = "trusted"
+
+[projects.'c:\users\bizdev25\documents\codex\2026-07-16\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\bizdev25\documents\codex\2026-07-21\new-chat']
+trust_level = "trusted"
+
+[projects.'c:\users\bizdev25\documents\codex']
+trust_level = "trusted"
+
+[projects.'c:\pond\bizinfo\etl2026']
+trust_level = "trusted"
+
+[shell_environment_policy.set]
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "aa6d8ffe273c2a7b1b20105a35ae49f69bdb4f025640807a31bcb47f8b67b92b"
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\BizDev25\.codex;C:\Users\BizDev25\AppData\Local\OpenAI\Codex\runtimes\cua_node\fb8898c05a62885e\bin\node_modules'
