@@ -6,37 +6,9 @@ Professional Enterprise Repository for AI Coding Assistant configurations, share
 
 ## 🏷️ Tags Index (ค้นตามหมวดแท็ก)
 
-กดที่ Tag เพื่อกระโดดไปยังกลุ่มสกิลตามสายงาน:
+กดที่ Tag เพื่อกระโดดไปยังกลุ่มสกิลในตารางค้นหาด่วน:
 
-[🏷️ `#DotNet`](#tag-dotnet) | [🏷️ `#Database`](#tag-database) | [🏷️ `#AI-Agents`](#tag-ai-agents) | [🏷️ `#Performance`](#tag-performance) | [🏷️ `#Testing`](#tag-testing) | [🏷️ `#DevOps`](#tag-devops) | [🏷️ `#Frontend`](#tag-frontend) | [🏷️ `#Documents`](#tag-documents)
-
----
-
-### 📌 Tag Details
-
-<a id="tag-dotnet"></a>
-* **`#DotNet`**: `aspnet-core`, `dotnet-webapi`, `analyzing-dotnet-performance`, `microbenchmarking`, `dotnet-aot-compat`, `directory-build-organization`, `convert-to-cpm`
-
-<a id="tag-database"></a>
-* **`#Database`**: `database-design`, `sql-server-design`, `postgresql-design`, `optimizing-ef-core-queries`, `supabase`, `supabase-postgres-best-practices`
-
-<a id="tag-ai-agents"></a>
-* **`#AI-Agents`**: `ai-sdk`, `ai-gateway`, `ai-elements`, `chat-sdk`, `json-render`, `eve`, `v0-dev`
-
-<a id="tag-performance"></a>
-* **`#Performance`**: `analyzing-dotnet-performance`, `build-perf-diagnostics`, `microbenchmarking`, `cdn-caching`, `runtime-cache`
-
-<a id="tag-testing"></a>
-* **`#Testing`**: `code-testing-agent`, `run-tests`, `writing-mstest-tests`, `test-anti-patterns`, `assertion-quality`, `test-gap-analysis`
-
-<a id="tag-devops"></a>
-* **`#DevOps`**: `deployments-cicd`, `env-vars`, `cron-jobs`, `vercel-cli`, `nuget-trusted-publishing`
-
-<a id="tag-frontend"></a>
-* **`#Frontend`**: `nextjs`, `shadcn`, `react-best-practices`, `geist`, `satori`, `swr`
-
-<a id="tag-documents"></a>
-* **`#Documents`**: `documents`, `pdf`, `presentations`, `spreadsheets`, `artifact-template-system-design`
+[🏷️ `#Database`](#tag-database) | [🏷️ `#DotNet`](#tag-dotnet) | [🏷️ `#Performance`](#tag-performance) | [🏷️ `#Testing`](#tag-testing) | [🏷️ `#MSBuild`](#tag-msbuild) | [🏷️ `#Frontend`](#tag-frontend) | [🏷️ `#DevOps`](#tag-devops) | [🏷️ `#AI-Agents`](#tag-ai-agents)
 
 ---
 
@@ -57,24 +29,24 @@ Professional Enterprise Repository for AI Coding Assistant configurations, share
 
 | ถ้าจะทำ / เทคโนโลยีที่ใช้ | ใช้ Skill นี้ | Category | Tag |
 | :--- | :--- | :--- | :--- |
-| **SQL Server (T-SQL)** | `sql-server-design` | Database | `#Database` |
+| <a id="tag-database"></a>**SQL Server (T-SQL)** | `sql-server-design` | Database | `#Database` |
 | **PostgreSQL** | `postgresql-design` | Database | `#Database` |
 | **Enterprise Database Architecture (DDD / Normalization)** | `database-design` | Database | `#Database` |
 | **EF Core Optimization (N+1 / Tracking / Compiled)** | `optimizing-ef-core-queries` | Database | `#Database` |
 | **Supabase (Database / Auth / Realtime / RLS)** | `supabase`, `supabase-postgres-best-practices` | Database | `#Database` |
-| **ASP.NET Core Web API / Blazor / MVC** | `aspnet-core`, `dotnet-webapi` | .NET Architecture | `#DotNet` |
-| **.NET Performance Analysis & Anti-patterns** | `analyzing-dotnet-performance` | Performance | `#Performance` |
+| <a id="tag-dotnet"></a>**ASP.NET Core Web API / Blazor / MVC** | `aspnet-core`, `dotnet-webapi` | .NET Architecture | `#DotNet` |
+| <a id="tag-performance"></a>**.NET Performance Analysis & Anti-patterns** | `analyzing-dotnet-performance` | Performance | `#Performance` |
 | **Benchmark (.NET BenchmarkDotNet)** | `microbenchmarking` | Performance | `#Performance` |
-| **Unit Testing & Test Generation (Polyglot)** | `code-testing-agent` | Testing | `#Testing` |
+| <a id="tag-testing"></a>**Unit Testing & Test Generation (Polyglot)** | `code-testing-agent` | Testing | `#Testing` |
 | **Run .NET Tests (VSTest / MTP)** | `run-tests` | Testing | `#Testing` |
 | **MSTest Authoring & Modernization** | `writing-mstest-tests` | Testing | `#Testing` |
-| **Central Package Management (CPM)** | `convert-to-cpm` | MSBuild | `#DotNet` |
-| **MSBuild Infrastructure & Props/Targets** | `directory-build-organization` | MSBuild | `#DotNet` |
+| <a id="tag-msbuild"></a>**Central Package Management (CPM)** | `convert-to-cpm` | MSBuild | `#MSBuild` |
+| **MSBuild Infrastructure & Props/Targets** | `directory-build-organization` | MSBuild | `#MSBuild` |
 | **.NET Upgrade (8 ➔ 9 ➔ 10 ➔ 11)** | `migrate-dotnet8-to-dotnet9`, `migrate-dotnet9-to-dotnet10`, `migrate-dotnet10-to-dotnet11` | Upgrades | `#DotNet` |
-| **Next.js (App Router / PPR / Caching)** | `nextjs`, `next-upgrade`, `next-cache-components` | Frontend | `#Frontend` |
+| <a id="tag-frontend"></a>**Next.js (App Router / PPR / Caching)** | `nextjs`, `next-upgrade`, `next-cache-components` | Frontend | `#Frontend` |
 | **React UI Components & Best Practices** | `shadcn`, `react-best-practices`, `geist` | Frontend | `#Frontend` |
-| **Vercel CLI / Deployment / Functions** | `vercel-cli`, `vercel-functions`, `deployments-cicd` | DevOps | `#DevOps` |
-| **AI SDK & AI Gateways** | `ai-sdk`, `ai-gateway`, `ai-elements` | AI Frameworks | `#AI-Agents` |
+| <a id="tag-devops"></a>**Vercel CLI / Deployment / Functions** | `vercel-cli`, `vercel-functions`, `deployments-cicd` | DevOps | `#DevOps` |
+| <a id="tag-ai-agents"></a>**AI SDK & AI Gateways** | `ai-sdk`, `ai-gateway`, `ai-elements` | AI Frameworks | `#AI-Agents` |
 
 ---
 
