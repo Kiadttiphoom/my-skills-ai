@@ -1,12 +1,27 @@
 # 🤖 My Skills AI
 
-Professional centralized repository for AI Coding Assistant configurations, shared skills, rules, and plugins (Codex & Gemini Antigravity).
+Professional Enterprise Repository for AI Coding Assistant configurations, shared skills, rules, and plugins (Codex & Gemini Antigravity).
+
+---
+
+## 🏷️ Tags Index (ค้นตามหมวดแท็ก)
+
+กดที่ Tag เพื่อดูสกิลที่เกี่ยวข้องตามสายงาน:
+
+`#DotNet` | `#Database` | `#AI-Agents` | `#Performance` | `#Testing` | `#DevOps` | `#Frontend` | `#Documents`
+
+* **`#DotNet`**: `aspnet-core`, `dotnet-webapi`, `analyzing-dotnet-performance`, `microbenchmarking`, `dotnet-aot-compat`, `directory-build-organization`, `convert-to-cpm`
+* **`#Database`**: `database-design`, `sql-server-design`, `postgresql-design`, `optimizing-ef-core-queries`, `supabase`, `supabase-postgres-best-practices`
+* **`#AI-Agents`**: `ai-sdk`, `ai-gateway`, `ai-elements`, `chat-sdk`, `json-render`, `eve`, `v0-dev`
+* **`#Performance`**: `analyzing-dotnet-performance`, `build-perf-diagnostics`, `microbenchmarking`, `cdn-caching`, `runtime-cache`
+* **`#Testing`**: `code-testing-agent`, `run-tests`, `writing-mstest-tests`, `test-anti-patterns`, `assertion-quality`, `test-gap-analysis`
+* **`#DevOps`**: `deployments-cicd`, `env-vars`, `cron-jobs`, `vercel-cli`, `nuget-trusted-publishing`
+* **`#Frontend`**: `nextjs`, `shadcn`, `react-best-practices`, `geist`, `satori`, `swr`
+* **`#Documents`**: `documents`, `pdf`, `presentations`, `spreadsheets`, `artifact-template-system-design`
 
 ---
 
 ## 📚 Quick Index / Categories
-
-กดที่หมวดหมู่เพื่อกระโดดไปยังรายละเอียดของแต่ละกลุ่ม:
 
 * [🗄️ Database Design](#1-database-design)
 * [⚡ .NET Architecture & Performance](#2-net-architecture--performance)
@@ -21,26 +36,83 @@ Professional centralized repository for AI Coding Assistant configurations, shar
 
 ## 🔍 Quick Search Table (ตารางค้นหาด่วน)
 
-| ถ้าจะทำ / เทคโนโลยีที่ใช้ | ใช้ Skill นี้ |
-| :--- | :--- |
-| **SQL Server (T-SQL)** | `sql-server-design` |
-| **PostgreSQL** | `postgresql-design` |
-| **Enterprise Database Architecture (DDD / Normalization)** | `database-design` |
-| **EF Core Optimization (N+1 / Tracking / Compiled)** | `optimizing-ef-core-queries` |
-| **Supabase (Database / Auth / Realtime / RLS)** | `supabase`, `supabase-postgres-best-practices` |
-| **ASP.NET Core Web API / Blazor / MVC** | `aspnet-core`, `dotnet-webapi` |
-| **.NET Performance Analysis & Anti-patterns** | `analyzing-dotnet-performance` |
-| **Benchmark (.NET BenchmarkDotNet)** | `microbenchmarking` |
-| **Unit Testing & Test Generation (Polyglot)** | `code-testing-agent` |
-| **Run .NET Tests (VSTest / MTP)** | `run-tests` |
-| **MSTest Authoring & Modernization** | `writing-mstest-tests` |
-| **Central Package Management (CPM)** | `convert-to-cpm` |
-| **MSBuild Infrastructure & Props/Targets** | `directory-build-organization` |
-| **.NET Upgrade (8 ➔ 9 ➔ 10 ➔ 11)** | `migrate-dotnet8-to-dotnet9`, `migrate-dotnet9-to-dotnet10`, `migrate-dotnet10-to-dotnet11` |
-| **Next.js (App Router / PPR / Caching)** | `nextjs`, `next-upgrade`, `next-cache-components` |
-| **React UI Components & Best Practices** | `shadcn`, `react-best-practices`, `geist` |
-| **Vercel CLI / Deployment / Functions** | `vercel-cli`, `vercel-functions`, `deployments-cicd` |
-| **AI SDK & AI Gateways** | `ai-sdk`, `ai-gateway`, `ai-elements` |
+| ถ้าจะทำ / เทคโนโลยีที่ใช้ | ใช้ Skill นี้ | Category | Tag |
+| :--- | :--- | :--- | :--- |
+| **SQL Server (T-SQL)** | `sql-server-design` | Database | `#Database` |
+| **PostgreSQL** | `postgresql-design` | Database | `#Database` |
+| **Enterprise Database Architecture (DDD / Normalization)** | `database-design` | Database | `#Database` |
+| **EF Core Optimization (N+1 / Tracking / Compiled)** | `optimizing-ef-core-queries` | Database | `#Database` |
+| **Supabase (Database / Auth / Realtime / RLS)** | `supabase`, `supabase-postgres-best-practices` | Database | `#Database` |
+| **ASP.NET Core Web API / Blazor / MVC** | `aspnet-core`, `dotnet-webapi` | .NET Architecture | `#DotNet` |
+| **.NET Performance Analysis & Anti-patterns** | `analyzing-dotnet-performance` | Performance | `#Performance` |
+| **Benchmark (.NET BenchmarkDotNet)** | `microbenchmarking` | Performance | `#Performance` |
+| **Unit Testing & Test Generation (Polyglot)** | `code-testing-agent` | Testing | `#Testing` |
+| **Run .NET Tests (VSTest / MTP)** | `run-tests` | Testing | `#Testing` |
+| **MSTest Authoring & Modernization** | `writing-mstest-tests` | Testing | `#Testing` |
+| **Central Package Management (CPM)** | `convert-to-cpm` | MSBuild | `#DotNet` |
+| **MSBuild Infrastructure & Props/Targets** | `directory-build-organization` | MSBuild | `#DotNet` |
+| **.NET Upgrade (8 ➔ 9 ➔ 10 ➔ 11)** | `migrate-dotnet8-to-dotnet9`, `migrate-dotnet9-to-dotnet10`, `migrate-dotnet10-to-dotnet11` | Upgrades | `#DotNet` |
+| **Next.js (App Router / PPR / Caching)** | `nextjs`, `next-upgrade`, `next-cache-components` | Frontend | `#Frontend` |
+| **React UI Components & Best Practices** | `shadcn`, `react-best-practices`, `geist` | Frontend | `#Frontend` |
+| **Vercel CLI / Deployment / Functions** | `vercel-cli`, `vercel-functions`, `deployments-cicd` | DevOps | `#DevOps` |
+| **AI SDK & AI Gateways** | `ai-sdk`, `ai-gateway`, `ai-elements` | AI Frameworks | `#AI-Agents` |
+
+---
+
+## 🌲 Skill Dependency & Co-usage Graph (แผนผังความเชื่อมโยงของ สกิล)
+
+```mermaid
+graph TD
+    classDef db fill:#003366,stroke:#333,stroke-width:1px,color:#fff;
+    classDef dotnet fill:#4B0082,stroke:#333,stroke-width:1px,color:#fff;
+    classDef test fill:#006633,stroke:#333,stroke-width:1px,color:#fff;
+    classDef fe fill:#8B0000,stroke:#333,stroke-width:1px,color:#fff;
+
+    subgraph DB["🗄️ Database Tier"]
+        DB_BASE["database-design"]:::db
+        SQL["sql-server-design"]:::db
+        PG["postgresql-design"]:::db
+        EF["optimizing-ef-core-queries"]:::db
+        
+        DB_BASE --> SQL
+        DB_BASE --> PG
+        DB_BASE --> EF
+    end
+
+    subgraph NET["⚡ .NET Architecture Tier"]
+        ASP["aspnet-core"]:::dotnet
+        API["dotnet-webapi"]:::dotnet
+        PERF["analyzing-dotnet-performance"]:::dotnet
+        CPM["convert-to-cpm"]:::dotnet
+        
+        ASP --> API
+        ASP --> PERF
+        ASP --> EF
+        API --> CPM
+    end
+
+    subgraph TEST["🧪 Testing Tier"]
+        TEST_AGENT["code-testing-agent"]:::test
+        RUN_TEST["run-tests"]:::test
+        MSTEST["writing-mstest-tests"]:::test
+        TEST_GAP["test-gap-analysis"]:::test
+        
+        TEST_AGENT --> RUN_TEST
+        TEST_AGENT --> MSTEST
+        MSTEST --> TEST_GAP
+    end
+
+    subgraph FE["🌐 Frontend & AI Tier"]
+        NEXT["nextjs"]:::fe
+        SHADCN["shadcn"]:::fe
+        AISDK["ai-sdk"]:::fe
+        
+        NEXT --> SHADCN
+        NEXT --> AISDK
+    end
+
+    ASP -.-> TEST_AGENT
+```
 
 ---
 
@@ -65,59 +137,106 @@ my-skills-ai/
 
 ---
 
-## 🛠️ Category Details
+## 🛠️ Category Details & Skill Metadata
 
 <a id="1-database-design"></a>
 ### 🗄️ 1. Database Design
-* **`database-design`**: ออกแบบ Enterprise Database Architecture, Data Modeling (DDD), Normalization & Partitioning
-* **`sql-server-design`**: ออกแบบ MS SQL Server (T-SQL), Temporal Tables, Filtered Indexes, Columnstore, RLS
-* **`postgresql-design`**: ออกแบบ PostgreSQL, JSONB Indexing (GIN), UUIDv7, BRIN Indexing, RLS
-* **`optimizing-ef-core-queries`**: ปรับแต่ง EF Core Queries, แก้ปัญหา N+1, Tracking Modes, Compiled Queries
-* **`supabase` / `supabase-postgres-best-practices`**: การใช้งาน Supabase, Database, Auth, Realtime & RLS
+* **`database-design`**
+  - **Category:** Database Design & Architecture
+  - **Use When:** ออกแบบ enterprise database schema, DDD entity modeling, 3NF/BCNF normalization, partitioning strategy
+  - **Avoid When:** ต้องการเขียน query ปรับแต่งประสิทธิภาพเฉพาะเครื่องยนต์ database เช่น SQL Server หรือ Postgres
+  - **Related Skills:** `sql-server-design`, `postgresql-design`, `optimizing-ef-core-queries`
+
+* **`sql-server-design`**
+  - **Category:** Database Engine (MS SQL Server)
+  - **Use When:** เขียน T-SQL DDL, ตั้งค่า Temporal Tables, Filtered Index, Columnstore, Row-Level Security (RLS)
+  - **Avoid When:** ใช้ฐานข้อมูล PostgreSQL หรือ NoSQL
+  - **Related Skills:** `database-design`, `optimizing-ef-core-queries`
+
+* **`postgresql-design`**
+  - **Category:** Database Engine (PostgreSQL)
+  - **Use When:** ออกแบบ PostgreSQL DDL, ชนิดข้อมูล JSONB/GIN, UUIDv7, BRIN Indexing, Table Partitioning
+  - **Avoid When:** ใช้ฐานข้อมูล Microsoft SQL Server
+  - **Related Skills:** `database-design`, `supabase-postgres-best-practices`
+
+* **`optimizing-ef-core-queries`**
+  - **Category:** ORM Query Optimization
+  - **Use When:** EF Core Queries ช้า, เกิดปัญหา N+1, ต้องการเลือก Tracking Mode หรือ Compiled Queries
+  - **Avoid When:** ใช้ Dapper หรือ SQL Direct แบบไม่ผ่าน EF Core
+  - **Related Skills:** `sql-server-design`, `postgresql-design`
+
+---
 
 <a id="2-net-architecture--performance"></a>
 ### ⚡ 2. .NET Architecture & Performance
-* **`aspnet-core` / `dotnet-webapi`**: สกิลพัฒนาและจัดโครงสร้าง ASP.NET Core Web API, Minimal APIs, Blazor, SignalR
-* **`analyzing-dotnet-performance`**: สแกนหา Performance Anti-patterns กว่า 50 รูปแบบใน .NET (Async, Memory, LINQ, Regex)
-* **`microbenchmarking`**: ออกแบบและรัน Benchmark ด้วย BenchmarkDotNet (BDN)
-* **`build-perf-diagnostics` / `build-perf-baseline`**: วินิจฉัยและแก้ปัญหา MSBuild ทำงานช้าด้วย Binary Logs (binlog)
-* **`dotnet-aot-compat`**: แก้ไขปัญหาและปรับแต่งโค้ดให้รองรับ Native AOT และ Trimming
+* **`aspnet-core`**
+  - **Category:** Web Application Architecture
+  - **Use When:** สร้าง/จัดโครงสร้าง Blazor, Minimal APIs, MVC, SignalR, gRPC, Middleware & Dependency Injection
+  - **Avoid When:** งานสคริปต์ C# แผ่นเดียว หรือการเขียนแค่ตัวรัน Test
+  - **Related Skills:** `dotnet-webapi`, `analyzing-dotnet-performance`
+
+* **`analyzing-dotnet-performance`**
+  - **Category:** Code Performance Audit
+  - **Use When:** รีวิว hot path, ตรวจสแกนหาจุดอับประสิทธิภาพใน .NET (Async, Allocations, LINQ, Regex)
+  - **Avoid When:** ต้องการเครื่องวัด microbenchmarking เฉพาะตัว (ใช้ `microbenchmarking` แทน)
+  - **Related Skills:** `microbenchmarking`, `build-perf-diagnostics`
+
+---
 
 <a id="3-testing--code-quality"></a>
 ### 🧪 3. Testing & Code Quality
-* **`code-testing-agent`**: จุดเริ่มต้นหลักสำหรับสร้าง/เขียน Unit Tests ครอบคลุมหลายภาษา (C#, Python, TS, Go ฯลฯ)
-* **`run-tests`**: ตรวจสอบและรันคำสั่ง `dotnet test` ที่ถูกต้องตาม Test Runner (VSTest / MTP)
-* **`test-anti-patterns`**: สแกนหาจุดบกพร่องในชุดการทดสอบ (Swallowed Exceptions, Flaky Tests, Shared State)
-* **`writing-mstest-tests`**: เขียนและ modernization ชุดทดสอบด้วย MSTest 3.x/4.x APIs
-* **`assertion-quality` / `test-gap-analysis`**: ประเมินความลึกของการทดสอบและหาช่องโหว่โค้ดที่ยังไม่มี Test ครอบคลุม
+* **`code-testing-agent`**
+  - **Category:** Test Generation Entrypoint
+  - **Use When:** ต้องการสร้าง Unit Test ใหม่, เพิ่ม Coverage, สแคฟโฟลด์ Test project (รองรับ C#, Python, TS, Go)
+  - **Avoid When:** ต้องการเพียงรัน Test ที่มีอยู่แล้ว (ใช้ `run-tests` แทน)
+  - **Related Skills:** `run-tests`, `writing-mstest-tests`, `test-anti-patterns`
+
+* **`run-tests`**
+  - **Category:** Test Execution & Diagnostics
+  - **Use When:** รัน `dotnet test` ด้วยฟิลเตอร์เฉพาะ, สลับระหว่าง VSTest กับ MTP (Microsoft.Testing.Platform)
+  - **Avoid When:** ต้องการเขียนโค้ด Test ใหม่
+  - **Related Skills:** `code-testing-agent`, `writing-mstest-tests`
+
+---
 
 <a id="4-msbuild--dependency-management"></a>
 ### 📦 4. MSBuild & Dependency Management
-* **`directory-build-organization`**: จัดการโครงสร้าง MSBuild ด้วย `Directory.Build.props` / `Directory.Build.targets`
-* **`convert-to-cpm`**: แปลงระบบจัดการ Package เป็น NuGet Central Package Management (CPM) ด้วย `Directory.Packages.props`
-* **`msbuild-antipatterns` / `msbuild-modernization`**: ตรวจจับข้อผิดพลาดในไฟล์ `.csproj` และแปลงเป็น SDK-Style
+* **`directory-build-organization`**
+  - **Category:** Solution Build Architecture
+  - **Use When:** รวมศูนย์การตั้งค่า Build ด้วย `Directory.Build.props` / `Directory.Build.targets`
+  - **Related Skills:** `convert-to-cpm`, `msbuild-modernization`
+
+* **`convert-to-cpm`**
+  - **Category:** Dependency Management
+  - **Use When:** รวมศูนย์เวอร์ชัน NuGet Packages ในโซลูชันด้วย `Directory.Packages.props` (CPM)
+  - **Related Skills:** `directory-build-organization`
+
+---
 
 <a id="5-upgrades--migrations"></a>
 ### 🚀 5. Upgrades & Migrations
-* **`migrate-dotnet8-to-dotnet9` / `migrate-dotnet9-to-dotnet10` / `migrate-dotnet10-to-dotnet11`**: ย้ายเวอร์ชัน .NET และแก้ Breaking Changes
-* **`migrate-nullable-references`**: เปิดใช้งานและแก้ไข Nullable Reference Types (NRT)
-* **`migrate-vstest-to-mtp`**: ย้ายการรัน Test จาก VSTest ไปยัง Microsoft.Testing.Platform (MTP)
+* **`migrate-dotnet8-to-dotnet9` / `migrate-dotnet9-to-dotnet10` / `migrate-dotnet10-to-dotnet11`**
+  - **Category:** Target Framework Migration
+  - **Use When:** อัปเกรดเวอร์ชัน .NET Target Framework และแก้ไข Breaking Changes ตามเวอร์ชัน
+
+---
 
 <a id="6-frontend--cloud-vercel--nextjs"></a>
 ### 🌐 6. Frontend & Cloud (Vercel / Next.js)
-* **`nextjs` / `next-upgrade` / `next-cache-components`**: การพัฒนาและปรับแต่ง Next.js App Router & Cache
-* **`shadcn` / `geist` / `react-best-practices`**: การใช้งาน Component UI และ Best Practices ของ React
-* **`vercel-cli` / `vercel-functions` / `deployments-cicd`**: การตั้งค่า Deployment, Serverless Functions บน Vercel
+* **`nextjs`**: พัฒนา Next.js App Router, Server Components & PPR
+* **`shadcn`**: พัฒนา UI Components ด้วย shadcn/ui & Tailwind CSS
+
+---
 
 <a id="7-ai--agent-frameworks"></a>
 ### 🤖 7. AI & Agent Frameworks
-* **`ai-sdk` / `ai-gateway` / `ai-elements`**: การพัฒนาแอปด้วย Vercel AI SDK, Unified Gateway & UI Components
-* **`chat-sdk` / `json-render`**: การทำ Multi-platform Chat Bots และ AI Dynamic UI Rendering
+* **`ai-sdk`**: พัฒนา AI Features, Streaming, Tool Calling ด้วย Vercel AI SDK
+
+---
 
 <a id="8-artifact-templates--documents"></a>
 ### 📄 8. Artifact Templates & Documents
-* **`documents` / `pdf` / `presentations` / `spreadsheets`**: สกิลการสร้างและประมวลผลไฟล์เอกสาร Word, PDF, Slides, Excel
-* **`artifact-template-*`**: แม่แบบเอกสารมาตรฐาน เช่น System Design, Design Report, Project Kickoff ฯลฯ
+* **`documents` / `pdf` / `presentations` / `spreadsheets`**: สร้างและจัดการเอกสาร Word, PDF, Slide และ Excel
 
 ---
 
