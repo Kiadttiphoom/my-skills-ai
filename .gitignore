@@ -1,0 +1,19 @@
+# Operating System temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Executables & Binary Runtimes (ไม่ต้องก๊อบ .exe เพราะ Codex App เครื่องใหม่จะโหลดให้อัตโนมัติ)
+codex/plugins/.plugin-appserver/
+codex/plugins/.remote-plugin-install-staging/
+codex/plugins/cache/
+
+# Temporary & Log files
+*.tmp
+*.log
+*.bak
+
+# Node & Build artifacts (ถ้ามี)
+node_modules/
+dist/
+build/
