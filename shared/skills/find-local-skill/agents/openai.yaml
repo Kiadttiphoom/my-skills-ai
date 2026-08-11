@@ -1,4 +1,0 @@
-interface:
-  display_name: "Find Local Skill"
-  short_description: "Decompose requests, then find relevant skills"
-  default_prompt: "Use $find-local-skill to decompose my request, inspect available skills, choose applicable ones, then analyze or handle the work."
