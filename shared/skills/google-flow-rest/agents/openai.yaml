@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Flow REST"
+  short_description: "Generate Google Flow videos safely via REST"
+  default_prompt: "Use $google-flow-rest to set up or create Google Flow videos for me without requiring terminal commands."
