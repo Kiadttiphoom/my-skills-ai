@@ -13,10 +13,18 @@ description: ค้นหา ตรวจสอบ ให้คะแนน แ�
 
 - `products.json` เป็นรายการคัดเลือกหลัก ปัจจุบันเป็นออบเจ็กต์ที่มี `version`, `source_url`, `updated_at`, `products` และรายการใช้ `id_data`, `product_url`, `affiliate_url`, `offer_url`, `status` ฯลฯ
 - `products-discovered.json` เป็นภาพรวมรายการที่เคยสำรวจ ห้ามถือว่าทุกตัวผ่านการคัดเลือก
-- `shopee-affiliate-30day-plan.md` เป็นแผนผลิตสื่อและสถานะงานต่อสินค้า
+- `shopee-affiliate-30day-plan.md` เป็นแผนผลิตสื่อ สถานะ/วันที่เริ่มแคมเปญ และเกณฑ์ความพร้อมก่อนส่ง Flow
 - `google-flow-mcp/` ใช้สร้างสื่อภายหลัง ไม่ใช่เครื่องมือค้นสินค้า และการมีสินค้าใน `products.json` ยังไม่ได้สั่งสร้างภาพหรือวิดีโอ
 
 ก่อนทำงานแต่ละครั้ง อ่านโครงสร้างจริงและจำนวนสินค้าใน `products.json` อีกครั้ง เพราะ schema และสถานะอาจเปลี่ยน อย่าเขียนทับข้อมูลหรือไฟล์เดิมโดยไม่รวมข้อมูลเก่า
+
+### สัญญาการใช้สามไฟล์ร่วมกัน
+
+อ่านทั้ง `products-discovered.json`, `products.json` และ `shopee-affiliate-30day-plan.md` ก่อนเลือกงาน ใช้ `id_data` เป็นรหัสร่วม: คลังสำรวจเป็นรายการทั้งหมดที่พบ; `products.json` เป็นรายการคัดเลือกและสถานะผลิตล่าสุด; แผน Markdown เป็นกติกาและปฏิทิน ไม่ใช่คิวอัตโนมัติ สินค้าใน `products.json` ทุกตัวต้องมี ID ในคลังสำรวจ แต่สินค้าในคลังสำรวจไม่จำเป็นต้องถูกเลือก เมื่อ upsert รายการคัดเลือก ให้เพิ่ม/อัปเดต ID เดียวกันในคลังสำรวจด้วยโดยไม่ลบประวัติ เก็บสถานะผลิตจริงไว้ใน `products.json` เป็นหลัก
+
+รัน `node scripts/check-shopee-workflow.mjs --json` จาก `C:\Pond\Pond\Shopee` เพื่อตรวจ ID ลิงก์ และข้อมูลที่ยังขาดก่อนส่งต่อให้ AI เขียนพรอมต์หรือ Flow รายงาน `ready_for_flow` เป็นผลตรวจสถานะ ไม่ใช่คำสั่งสร้างวิดีโอ ถ้า field ยังขาดให้ค้นหลักฐานและแก้ record เดิมก่อน ห้ามเปลี่ยนเป็น `ready` เพื่อให้ผ่านตัวตรวจ
+
+ข้อมูลต้นไฟล์แผนมี `campaign_status`, `preparation_date`, `planned_start_date`, `actual_start_date`, `timezone` และ `day_1_trigger` ถ้า `actual_start_date: null` ให้ถือว่า **ยังไม่เริ่ม Day 1** แม้วันเตรียมแผนผ่านไปแล้ว อย่าอนุมานวันเริ่มจากวันที่ปัจจุบันหรือ `updated_at` วันเริ่มจริงคือวันที่โพสต์ Shopee Video คลิปแรกสำเร็จพร้อม URL/รหัสโพสต์ที่ตรวจได้ตามเวลา `Asia/Bangkok`; เมื่อนั้นอัปเดต `actual_start_date` และ `campaign_status: active` Day 30 คือวันเริ่ม + 29 วัน `planned_start_date` เป็นเพียงกำหนดการล่วงหน้า
 
 ## ขั้นตอนปฏิบัติ
 
@@ -132,6 +140,8 @@ Field ที่หาไม่ได้ให้ใส่ `unknown` (หรื�
 ใน `product.md` เขียนข้อเท็จจริงพร้อม URL/วันตรวจ, เหตุผลตัดสิน, ข้อมูลที่ยังไม่ทราบ, และอย่างน้อย 3 มุมคอนเทนต์: Problem → Solution, Demonstration, Value ระบุชัดว่าแต่ละมุมมีภาพ/คุณสมบัติรองรับหรือยัง ไม่อ้างว่าผู้รีวิวเคยใช้หรือผลลัพธ์เกิดจริงโดยไม่มีหลักฐาน
 
 เมื่อผ่านการคัดเลือก ให้ **upsert** ด้วย item ID ลง `products.json` โดยรักษา `version`, ข้อมูลเดิม, URL เดิมที่ยังใช้ได้ และสถานะงานเดิม ไม่ล้างทั้งไฟล์ `products-discovered.json` เป็นข้อมูลสำรวจ ไม่ใช่คิวผลิต อัปเดต `updated_at`, `checked_at`, `selection_evidence`, `score`, `priority`, `status` ตาม schema ปัจจุบัน สถานะ `shortlisted` หมายถึงผ่านการวิจัยเบื้องต้น; ใช้ `selected`/`ready` ตามแผนผลิตเมื่อรายละเอียดและบทพร้อมจริง อย่าถือว่าเชื่อม `google-flow-mcp` หรือคิวโพสต์แล้วถ้ายังไม่มีขั้นตอนเชื่อมที่ทดสอบได้
+
+สำหรับส่งต่อสู่การผลิต ให้บันทึกข้อเท็จจริงที่จะกล่าวในคลิปเป็น `verified_features: [{"claim":"...","source_url":"https://..."}]` ใน record ของ `products.json` เก็บ path รูปสินค้าจริงที่ตรวจแล้วใน `local_reference_images` และเวลาตรวจใน `reference_images_verified_at` เขียนพรอมต์แต่ละคลิปใน `products/<id_data>-<slug>/scripts/video-XX-prompt.md` เก็บ path ใน `video_prompts` และใส่ `prompt_reviewed_at` หลังตรวจบทกับหลักฐานแล้วเท่านั้น ผู้เตรียม Flow บันทึก `flow_settings` ที่มี `model`, `ratio`, `duration`, `credits_checked_at` หลังตรวจบัญชีจริง `scripts/check-shopee-workflow.mjs` ใช้ field เหล่านี้ตรวจความพร้อม สถานะ `ready` ต้องสะท้อนงานที่ทำเสร็จจริง การมีเพียง `image_url` ระยะไกลหรือชื่อสินค้าไม่ทำให้พร้อมสร้างวิดีโอ
 
 ## การทำงานต่อโดยไม่ต้องถามทุกขั้น
 
