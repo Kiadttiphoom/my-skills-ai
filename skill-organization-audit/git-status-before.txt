@@ -1,0 +1,10 @@
+?? organize-skills.py
+?? shared/skills/arch-render/
+?? shared/skills/architecture/
+?? shared/skills/archlang/
+?? shared/skills/revit-bim/
+?? shared/skills/sketch/
+?? shared/skills/skill-creator/
+?? shared/skills/skills-architects/
+?? skill-organization-audit/
+?? skill-rename-map.md
