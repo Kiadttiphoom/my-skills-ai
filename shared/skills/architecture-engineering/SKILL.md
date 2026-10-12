@@ -23,6 +23,7 @@ Every recommendation must pass through all of these viewpoints before it is give
 6. **Safety-critical designs need professional verification.** The assistant supports a licensed architect/engineer; it does not replace one. State this plainly when output could be used for construction, permitting or purchasing.
 7. **Explain the why.** Every recommendation includes the reason, the alternative considered, and what would change the decision.
 8. **Separate evidence levels** in every substantive answer (see section 5).
+9. **Never cite a source that was not actually read.** A website name, a homepage, or a standard's title is not evidence. Cite only the document, edition and clause that was actually opened (see section 4A).
 
 ## 3. Reasoning workflow (use for any design request)
 
@@ -80,7 +81,87 @@ Load path to keep in mind at all times: **loads → slab → beam → column/wal
 | `building-renovation.md` | Existing buildings, load changes, openings, change of use |
 | `construction-review.md` | Reviewing drawings, site work, quality and safety |
 
+### Research records (library root)
+
+| File | Purpose |
+|---|---|
+| `RESEARCH_SOURCES.md` | Inventory of sources actually accessed: ID, title, publisher, URL, year, edition, date accessed, scope, Thailand applicability, reliability, access limits |
+| `KNOWLEDGE_GAP_REPORT.md` | What is missing, superficial, contradictory or unsupported |
+| `ENGINEERING_VALIDATION_CHECKLIST.md` | Checks before any output is treated as reliable |
+| `RESEARCH_COVERAGE_MATRIX.md` | Which topics are backed by which sources, and which are not yet |
+
 Read this file first, then open only the one to three files relevant to the question. For a full building design, start with the matching workflow and follow its links.
+
+## 4A. Research sources and verification
+
+Use this when writing or updating reference files, and when an answer depends on a standard, regulation or utility rule.
+
+**Source priority** (higher beats lower when they conflict; always state the conflict):
+
+1. Thailand official: DPT (กรมโยธาธิการและผังเมือง), Department of Local Administration, Council of Engineers, Architect Council, EIT/วสท., TISI/สมอ., Royal Gazette, provincial and municipal building rules, utilities (MEA, PEA, MWA, PWA).
+2. International bodies: ACI, ASCE, ICC, AISC, ASPE, NFPA, IEEE, IEC, ASHRAE, ASTM, ISO.
+3. Universities and peer-reviewed or open educational material.
+4. Manufacturer technical documents (installation instructions are not general engineering standards).
+
+**Starting points by topic** (entry points to search from, NOT verified evidence):
+
+| Topic | International starting points | Thai side to check first |
+|---|---|---|
+| Foundations, reinforced concrete | ACI (concrete.org), ACI 318 series; confirm the current edition on the publisher's page before citing | EIT/วสท. concrete and foundation standards; ministerial regulations under the Building Control Act |
+| Plumbing and sanitary | ASPE (aspe.org); ICC plumbing provisions | MWA/PWA service requirements; ministerial regulations on drainage and wastewater treatment; EIT/วสท. sanitary guidance |
+| Building electrical | IEC (iec.ch); IEEE | PEA (provincial areas) or MEA (Bangkok metropolitan area) service rules; EIT/วสท. electrical installation standard |
+| General building code (comparison only) | ICC International Building Code | Thai building regulations and local authority |
+
+**Thai official access points** (open the actual document before citing; contents below are what each site is expected to hold, NOT verified):
+
+| Site | Expected use | Notes |
+|---|---|---|
+| dpt.go.th (กรมโยธาธิการและผังเมือง) | มยผ. standards (e.g. wind, seismic, concrete, materials), downloadable PDFs under its standards/วิชาการ sections | Confirm each มยผ. number, year and revision from the PDF itself |
+| bca.dpt.go.th (สำนักควบคุมและตรวจสอบอาคาร) | Building Control Act, ministerial regulations (e.g. กฎกระทรวง ฉบับที่ 6 on loads), local ordinances, building-control handbook | Use to test whether an ACI/IBC-derived rule conflicts with Thai law; check the current edition and local ordinance |
+| eit.or.th (วสท.) | EIT standards derived from international codes, including electrical installation and concrete standards; publications for sale | Paywalled: cite only what was read; record edition |
+| coe.or.th (สภาวิศวกร) | Professional practice rules, controlled-engineering scope, licensing | Determines which work needs a licensed engineer |
+| tisi.go.th (สมอ.) | มอก. product standards for materials (e.g. rebar, cement) | Confirm the exact มอก. number and scope on the site; matching a มอก. grade to an ASTM/ACI material spec needs a documented comparison, never an assumed equivalence |
+
+**Source trust rules**
+
+- Use publisher domains for international standards (ACI: concrete.org; ICC: iccsafe.org). Never use file-sharing, mirror or aggregator links presented as "ACI CODE-318" or "IBC" (for example gooshared.com or kaoklahome.com): they are not the publisher, may be unauthorised copies, and cannot establish edition or accuracy.
+- Third-party Thai sites (bsa.or.th, tumcivil, university pages) are secondary finding aids; a copy of an official document hosted on a third-party site (such as the ei-auditor.com handbook) is read as that official document but its currency must still be checked. Locate the document there if useful, but confirm against the DPT/BCA/EIT original, record it as a secondary source in `RESEARCH_SOURCES.md`, and label any claim resting only on it as unverified.
+- Statements about which มยผ. number covers what, or which มอก. covers which material, are claims to check in the document, not facts to copy from a summary.
+
+**User-supplied source registry** (all entries start as UNVERIFIED; move an entry to `RESEARCH_SOURCES.md` only after its actual document has been opened):
+
+| Role | URL | Status / how to use |
+|---|---|---|
+| International: concrete | https://www.concrete.org/ | Publisher homepage. Find the ACI 318 series here; confirm the current edition (user mentioned ACI CODE-318-25) on this site |
+| International: plumbing | https://www.aspe.org/ | Publisher homepage; mostly paywalled, cite only what was read |
+| International: electrical | https://www.iec.ch/ | Publisher homepage; standards are paywalled |
+| International: building code | ICC (iccsafe.org) | Publisher for IBC; the user supplied no official URL, so locate it from the publisher |
+| Thai official: standards (มยผ.) | https://www.dpt.go.th/ | Primary. Open the standards/ตำรา section and download the PDFs |
+| Thai official: building control law | https://bca.dpt.go.th/ | Primary. Act, ministerial regulations, ordinances |
+| Thai official: electrical (provincial areas) | https://www.pea.co.th/ | Primary for service rules outside the Bangkok metropolitan area (MEA covers Bangkok metropolitan area; no URL supplied) |
+| Thai professional | eit.or.th (วสท.) | Primary for EIT standards; sold publications |
+| Thai professional | coe.or.th (สภาวิศวกร) | Primary for licensing and practice rules |
+| Thai product standards | tisi.go.th (สมอ.) | Primary for มอก. numbers and scope |
+| Secondary: มยผ. file index | https://www.bsa.or.th/%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B9%82%E0%B8%A2%E0%B8%98%E0%B8%B2%E0%B8%98%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%9C%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%91.html | Finding aid only (Association of Building Inspectors). Confirm each file against the DPT original |
+| Secondary: engineering downloads | https://engfanatic.tumcivil.com/ | Finding aid only. Confirm against official originals |
+| READ (S-002): DPT building control handbook, dated 2552 | https://www.ei-auditor.com/img/1-building%20control%20law%20Handbook.pdf | DPT-authored explanatory guide (not law), hosted on a third-party site; only the pages in the supplied file were read. Orientation only; thresholds and fees may be outdated. See `RESEARCH_SOURCES.md` |
+| READ (S-001): building inspection ministerial regulation พ.ศ. ๒๕๔๘ | https://webs-apps.dpt.go.th/dpt_auditbldg/files/rules.pdf | Royal Gazette text read from a user-uploaded copy (automated fetch blocked). Binding law on inspection of existing buildings; covers inspection, not structural design. Currency and amendments unchecked. See `RESEARCH_SOURCES.md` |
+
+**Claims in user-supplied summaries (unverified; check in the actual document before use):** มยผ. 1302 as the seismic standard; มยผ. 1101–1106 as structural material specifications; กฎกระทรวง ฉบับที่ 6 as the source of building load values; มอก. 24 as the rebar standard; EIT adapting ACI into Thai standards with Thai safety factors.
+
+**Flagged links, do not use as sources:** https://www.gooshared.com/d/ODgyMy00 and https://www.kaoklahome.com/guides were presented as ACI CODE-318-25 and the IBC. Their domains are not the publishers (ACI, ICC), they cannot establish edition or authenticity, and they may be unauthorised copies. Use the publisher sites above instead.
+
+**Verification rules**
+
+- A homepage or a title found is not a source. Open the document and record URL, title, publisher, edition/year and clause before treating a claim as VERIFIED.
+- Confirm that an edition exists and is current on the publisher's own page; otherwise record it as unverified.
+- Many standards are paywalled. Use only what is legitimately accessible, cite only what was actually read, never reproduce clauses in full, and record the access limitation. If only a title or abstract was read, the claim is not VERIFIED.
+- International standards are reference material, not Thai law. Check Thai law and EIT/วสท. practice first, state the difference in scope, and never present an international requirement as a Thai one.
+- If browsing or a document is unavailable, say so and continue with clearly labelled, supportable knowledge. Do not pretend it was researched.
+- Manufacturer data (piles, pipes, breakers, equipment) is product-specific and must not be generalised into a standard.
+- Link important technical claims in reference files to a Source ID in `RESEARCH_SOURCES.md`.
+
+**Reference file standard.** Each substantial reference file covers: scope, theory, terminology, physical principles, required inputs, equations with all variables and units defined, design workflow, construction details, materials, links to other systems, defects and failure modes, quality checks, real examples, misconceptions, checklists, Thai regulations (only where verified), international standards (where appropriate), and sources with verification status.
 
 ## 5. Evidence labelling
 
@@ -93,6 +174,13 @@ Mark statements in answers with one of:
 - **REQUIRES APPROVAL**: needs a licensed professional, authority or utility.
 
 Distinguish four layers when discussing Thailand: **law** (statute/ministerial regulation), **engineering standard** (TIS, EIT/วสท., international codes), **common practice**, and **preliminary rule of thumb**. Never present a lower layer as if it were a higher one.
+
+## 5A. Calculations and conflicting evidence
+
+- A worked calculation must state its assumptions, units, method, limitations and verification requirement. It is an illustration, never an approved construction specification.
+- Never describe a calculation or design as independently verified unless an actual verification took place.
+- When sources disagree, report each position, its source, its scope (jurisdiction, building type, edition) and which layer it belongs to. Do not average them or silently pick one; state which applies in Thailand if known, otherwise "needs verification" and who decides (authority, utility or licensed engineer).
+- Missing inputs stay missing: list them rather than filling them with typical values.
 
 ## 6. Cross-discipline coordination checks (always run)
 
@@ -141,6 +229,7 @@ Keep answers proportional: short for a simple question, structured for a full de
 - [ ] Constructability and sequence considered
 - [ ] Verified vs. assumed items labelled
 - [ ] Regulations flagged for verification, not asserted
+- [ ] Every cited source was actually read; edition and clause recorded
 - [ ] Professional-verification statement included where needed
 
 ## 11. Assumptions and limitations of this skill
