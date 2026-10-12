@@ -202,7 +202,20 @@ Occupancy changes loads, water demand, power demand, ventilation, fire requireme
 
 ## 8. Thailand context (summary)
 
-Design for heavy rain and drainage, high humidity, heat and solar gain, termites, and typical reinforced-concrete frame with masonry infill and plastering. Soft or high-water-table ground (e.g. central plains, Bangkok region) often drives pile foundations; southern Thailand brings very high rainfall and flood exposure. Details and what must be verified live in `references/thailand-building-regulations.md`.
+Design for heavy rain and drainage, high humidity, heat and solar gain, termites, and typical reinforced-concrete frame with masonry infill and plastering. Soft or high-water-table ground (e.g. central plains, Bangkok region) drives deep pile foundations into sand layers; southern Thailand brings high rainfall, tropical conditions, and shophouse traditions; northern/western zones require seismic design.
+
+**Verified Legal & Technical Foundations:**
+The skill now integrates verified knowledge extracted and verified directly from the national building law repository (41 categories, 69 unique source documents):
+- **Building Control Act B.E. 2522 (and amendments up to 2560)** [S-003] & **DPT Practice Handbook 2552** [S-002].
+- **Setbacks, Open Space & Heights:** Ministerial Regulation No. 55 (B.E. 2543) [S-004] & Bangkok Municipal Ordinances 2544 [S-018].
+- **Live Loads, Wind Loads & Soil Bearing:** Ministerial Regulation No. 6 (B.E. 2527) [S-006].
+- **Seismic Design:** Ministerial Regulation on Earthquake Resistance B.E. 2564 [S-007] & DPT Standard Plans 406/412 [S-021].
+- **High-Rise & Extra-Large Buildings:** Ministerial Regulation No. 33 (B.E. 2535) [S-005] & Fire Safety Regulations [S-008, S-016].
+- **Parking & Universal Access:** Ministerial Regulation No. 7 [S-010] & Universal Design Regulation B.E. 2548/2564 [S-011].
+- **Wastewater & Environmental Codes:** Ministerial Regulation No. 44/71 (B.E. 2566 grease trap & septic rules) [S-009].
+- **Standard National Plans:** DPT Shophouse Plans (Plan 362, 368, 369-371), Contemporary Houses (Plan 396-397), and Floating Houses (Plan 361) [S-019, S-020].
+
+Full statutory clauses, engineering values, and cross-references live in `references/thailand-building-regulations.md`, `references/structural-engineering.md`, `references/fire-and-life-safety.md`, `references/building-space-planning.md`, and `references/foundations-and-piles.md`.
 
 ## 9. Required output shape for design answers
 
