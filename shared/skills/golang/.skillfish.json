@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "golang",
+  "owner": "xobotyi",
+  "repo": "cc-foundry",
+  "path": "plugins/golang/skills/golang",
+  "branch": "master",
+  "sha": "e9e0cae86db9859c008184fb1a575afe72f29ee0",
+  "source": "manual"
+}
